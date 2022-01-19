@@ -1,1 +1,69 @@
+.navbar
+    padding: 0 24px 24px 24px
+    margin: 40px 0
 
+.navbar__logo
+    width: 146px
+    height: 32px
+
+.header
+    max-width: 327px
+    padding: 0 24px
+    margin-bottom: 4px
+
+.header__title
+    +text-style($black, 40px, $bold-weight, $ibm-plex-sans)
+    line-height: 48px
+    margin-bottom: 20px
+
+.header__description
+    +text-style($black, 16px, $regular-weight, $ibm-plex-sans)
+    line-height: 26px
+
+.product
+    margin: 64px 0
+
+.product__image
+    width: 100%
+    height: auto
+
+.product__background
+    height: 400px
+    background-color: $black
+    border-radius: 12px
+
+.product__card
+    background-color: $orange
+    border-radius: 12px
+
+//TABLET MEDIA QUERY
++tablet-screen()
+    .navbar
+        padding: 0 40px 33px 40px
+        margin: 62px 0
+
+    .header
+        max-width: 520px
+        padding: 0 39px
+
+    .header__title
+        font-size: 64px
+        line-height: 64px
+        margin-bottom: 28px
+
+    .header__description
+        font-size: 18px
+        line-height: 28px
+
+//DESKTOP MEDIA QUERY
++desktop-screen()
+    .navbar
+        padding: 0 165px 33px 165px
+    .header
+        padding: 0 165px
+        max-width: 1015px
+
+    .header__title
+        font-size: 64px
+        line-height: 64px
+        margin-bottom: 40px
