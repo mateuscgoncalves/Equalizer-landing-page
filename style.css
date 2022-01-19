@@ -82,7 +82,44 @@ body {
 
 .product__card {
   background-color: #fa7453;
-  border-radius: 12px; }
+  border-radius: 12px;
+  padding: 48px 36px; }
+
+.card__title {
+  color: #fcfaf9;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 40px;
+  margin-bottom: 12px; }
+
+.card__description {
+  color: #fcfaf9;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 28px;
+  margin-bottom: 4px; }
+
+.card__price {
+  color: #fcfaf9;
+  font-size: 65px;
+  font-weight: 700;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 52px;
+  display: table;
+  margin: 32px 0; }
+
+.card__price--period {
+  color: #fcfaf9;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  padding-left: 16px;
+  display: table-cell;
+  vertical-align: middle; }
 
 @media screen and (min-width: 768px) {
   .navbar {

@@ -35,6 +35,31 @@
 .product__card
     background-color: $orange
     border-radius: 12px
+    padding: 48px 36px
+
+.card__title
+    +text-style($white, 32px, $bold-weight, $ibm-plex-sans)
+    line-height: 40px
+    margin-bottom: 12px
+
+.card__description
+    +text-style($white, 18px, $regular-weight, $ibm-plex-sans)
+    line-height: 28px
+    margin-bottom: 4px
+
+.card__price
+    +text-style($white, 65px, $bold-weight, $ibm-plex-sans)
+    line-height: 52px
+    display: table
+    margin: 32px 0
+
+.card__price--period
+    +text-style($white, 20px, $regular-weight, $ibm-plex-sans)
+    line-height: 32px
+    letter-spacing: -0.2px
+    padding-left: 16px
+    display: table-cell
+    vertical-align: middle
 
 //TABLET MEDIA QUERY
 +tablet-screen()
