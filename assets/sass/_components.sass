@@ -23,12 +23,7 @@
 .product
     margin: 64px 0
 
-.product__image
-    width: 100%
-    height: auto
-
 .product__background
-    height: 400px
     background-color: $black
     border-radius: 12px
 
@@ -60,6 +55,33 @@
     padding-left: 16px
     display: table-cell
     vertical-align: middle
+
+.button
+    width: 296px
+    // width: 100%
+    border: none
+    border-radius: 12px
+    +text-style($white, 18px, $bold-weight, $ibm-plex-sans)
+    line-height: 32px
+    letter-spacing: -0.18px
+    padding: 15px 0 15px 0
+    margin-bottom: 16px
+    cursor: pointer
+
+.button--ios
+    background-color: $black
+    &:hover
+        background-color: $cyan
+
+.button--android
+    background-color: $white
+    color: $black
+    &:hover
+        background-color: $yellow
+
+.button__icon
+    position: relative
+    top: 2px
 
 //TABLET MEDIA QUERY
 +tablet-screen()
